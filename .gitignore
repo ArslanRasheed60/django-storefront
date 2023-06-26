@@ -4,7 +4,7 @@ Thumbs.db
 
 # Ignore user-specific files and directories
 /.idea
-/.vscode
+# /.vscode
 /.venv
 /node_modules
 /bower_components
