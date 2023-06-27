@@ -9,7 +9,9 @@ Thumbs.db
 /node_modules
 /bower_components
 
-__pycache__
+/__pycache__
+/_pycache_
+
 
 # Ignore build output
 /build
