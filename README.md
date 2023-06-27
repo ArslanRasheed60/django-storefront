@@ -34,3 +34,7 @@
 > python manage.py sqlmigrate ["app_name"] ["sequence_number"]
 >
 > For example python manage.py sqlmigrate store 002
+
+## Revert migrations
+
+> python manage.py migrate ["app_name"] ["previous_sequence_number"]
