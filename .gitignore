@@ -9,6 +9,8 @@ Thumbs.db
 /node_modules
 /bower_components
 
+__pycache__
+
 # Ignore build output
 /build
 /dist
@@ -25,7 +27,7 @@ Thumbs.db
 # Ignore compiled code or binaries
 # *.class
 # *.o
-# *.pyc
+*.pyc
 
 # Ignore package files and dependencies
 # package-lock.json

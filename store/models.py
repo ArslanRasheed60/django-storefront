@@ -78,6 +78,7 @@ class Address(models.Model):
     # customer = models.OneToOneField(
     #     Customer, on_delete=models.CASCADE, primary_key=True)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    zip_code = models.IntegerField(null=True)
 
 
 class Cart(models.Model):
