@@ -24,3 +24,13 @@
 ## Create migrations
 
 > python manage.py makemigrations
+
+## Running Migrations
+
+> python manage.py migrate
+
+## check migration code that sent to the database
+
+> python manage.py sqlmigrate ["app_name"] ["sequence_number"]
+>
+> For example python manage.py sqlmigrate store 002
