@@ -20,3 +20,7 @@
 >
 > - playground is the name of the **new app**
 > - we need to register it to the **settings.py file**
+
+## Create migrations
+
+> python manage.py makemigrations
