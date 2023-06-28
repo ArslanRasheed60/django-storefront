@@ -38,3 +38,24 @@
 ## Revert migrations
 
 > python manage.py migrate ["app_name"] ["previous_sequence_number"]
+
+## connect to mysql
+
+> pipenv install mysqlclient
+
+## create and run custom sql through empty migration
+
+> python manage.py makemigrations ["Folder_name"] --empty
+>
+> operations = [
+
+        migrations.RunSQL("""
+            INSERT INTO store_collection (title)
+            VALUES ('collection1')
+        """, """
+            DELETE FROM store_collection
+            WHERE title='collection1'
+        """)
+    ]
+
+>
