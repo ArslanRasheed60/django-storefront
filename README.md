@@ -59,3 +59,11 @@
     ]
 
 >
+
+## websites
+
+> https://mockaroo.com/
+>
+> https://docs.djangoproject.com/en/4.2/ref/models/querysets/#values
+>
+> https://docs.djangoproject.com/en/4.2/ref/models/database-functions/
