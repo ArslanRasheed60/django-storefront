@@ -67,3 +67,9 @@
 > https://docs.djangoproject.com/en/4.2/ref/models/querysets/#values
 >
 > https://docs.djangoproject.com/en/4.2/ref/models/database-functions/
+>
+> https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#modeladmin-options
+
+## Create New User
+
+> python manage.py createsuperuser
