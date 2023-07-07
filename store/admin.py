@@ -6,7 +6,6 @@ from . import models
 from django.db.models import Count
 from django.utils.html import format_html, urlencode
 from django.urls import reverse
-from django.contrib.contenttypes.admin import GenericTabularInline
 from tags.models import TaggedItem
 
 # * another way to register product model
@@ -29,20 +28,12 @@ class InventoryFilter(admin.SimpleListFilter):
         if self.value() == '<10':
             return queryset.filter(inventory__lt=10)
 
-# * generic relationships
-
-
-class TagInline(GenericTabularInline):
-    autocomplete_fields = ['tag']
-    model = TaggedItem
-
 
 @admin.register(models.Product)
 class ProductAdmin(admin.ModelAdmin):
     # exclude = ['promotions']
     # fields = []
     # readonly_fields = []
-    inlines = [TagInline]
     autocomplete_fields = ['collection']
     prepopulated_fields = {
         'slug': ['title']
