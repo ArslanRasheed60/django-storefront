@@ -69,7 +69,13 @@
 > https://docs.djangoproject.com/en/4.2/ref/models/database-functions/
 >
 > https://docs.djangoproject.com/en/4.2/ref/contrib/admin/#modeladmin-options
+>
+> https://www.django-rest-framework.org/
 
 ## Create New User
 
 > python manage.py createsuperuser
+
+## to handle restful api's
+
+> pipenv install djangorestframework
