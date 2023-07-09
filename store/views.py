@@ -22,5 +22,6 @@ def product_detail(request, id):
     return Response(serializer.data)
 
 
+@api_view
 def collection_detail(request, id):
     return Response(f"collection: " + id)
