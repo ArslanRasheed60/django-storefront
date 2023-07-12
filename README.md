@@ -25,7 +25,7 @@
 
 > python manage.py makemigrations
 
-## Running Migrations
+## Running Migrations (create table in database)
 
 > python manage.py migrate
 
