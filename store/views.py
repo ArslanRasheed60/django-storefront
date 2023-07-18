@@ -6,8 +6,8 @@ from rest_framework import status
 from rest_framework.views import APIView 
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
-from .models import Product, Collection, OrderItem
-from .serializers import ProductSerializer, CollectionSerializer
+from .models import Product, Collection, OrderItem, Review
+from .serializers import ProductSerializer, CollectionSerializer, ReviewSerializer
 from django.db.models import Count
 
 #** Collectio View SEts
@@ -180,3 +180,8 @@ class CollectionDetail(RetrieveUpdateDestroyAPIView):
 #             return Response({'error', 'collection cannot be deleted because it is associated with product'},status=status.HTTP_405_METHOD_NOT_ALLOWED)
 #         collection.delete()
 #         return Response({'message': 'Success'},status=status.HTTP_204_NO_CONTENT)
+
+
+class ReviewViewSet(ModelViewSet):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
