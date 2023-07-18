@@ -6,7 +6,7 @@ from . import views
 router = DefaultRouter()
 router.register('products', views.ProductViewSet)
 router.register('collections', views.CollectionViewSet)
-pprint(router.urls)
+# pprint(router.urls)
 
 
 # URL Config
