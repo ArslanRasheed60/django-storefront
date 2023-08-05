@@ -37,7 +37,7 @@ class ProductViewSet(ModelViewSet):
     ordering_fields = ['unit_price', 'last_update']
 
     #? pagination
-    pagination_class = PageNumberPagination
+    # pagination_class = PageNumberPagination
 
     def get_serializer_context(self):
         return {'request': self.request}
