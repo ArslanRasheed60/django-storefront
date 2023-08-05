@@ -11,6 +11,7 @@ djangorestframework = "*"
 environ = "*"
 django-environ = "*"
 drf-nested-routers = "*"
+django-filter = "*"
 
 [dev-packages]
 
