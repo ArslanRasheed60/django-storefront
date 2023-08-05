@@ -13,6 +13,7 @@ from .models import Product, Collection, OrderItem, Review
 from .serializers import ProductSerializer, CollectionSerializer, ReviewSerializer
 from django.db.models import Count
 from .filters import ProductFilter
+from .pagination import DefaultPagination
 
 #** Collectio View SEts
 class ProductViewSet(ModelViewSet):
@@ -37,7 +38,7 @@ class ProductViewSet(ModelViewSet):
     ordering_fields = ['unit_price', 'last_update']
 
     #? pagination
-    # pagination_class = PageNumberPagination
+    pagination_class = DefaultPagination
 
     def get_serializer_context(self):
         return {'request': self.request}
